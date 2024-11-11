@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easybank - Create Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form method="post" action="{{ url_for('create_account') }}">
+        <input type="text" name="account_name" placeholder="Account Name" required>
+        <button type="submit">Create Account</button>
+    </form>
+</body>
+</html>

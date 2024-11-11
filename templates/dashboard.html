@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easybank - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+</head>
+<body>
+    <h1>Account Dashboard</h1>
+    <nav>
+        <a href="{{ url_for('check_balance') }}">Check Balance</a>
+        <a href="{{ url_for('deposit') }}">Deposit</a>
+        <a href="{{ url_for('transactions') }}">Transactions</a>
+        <a href="{{ url_for('services') }}">Services</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+</body>
+</html>
